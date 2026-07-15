@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Commission Tracker</title>
+
+    <!-- CSS connection -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Arcade font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>COMMISSION TRACKER</h1>
+
+
+        <div class="card">
+
+            <h2>TODAY</h2>
+
+            <p id="todayMoney" class="money">
+                $0 / $200
+            </p>
+
+            <div class="progress-bar">
+                <div id="todayProgress" class="progress-fill"></div>
+            </div>
+
+            <p id = "dailystat" class="status">
+                0% COMPLETE
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h2>THIS MONTH</h2>
+
+            <p id="monthlyMoney" class="money">
+                $0 / $3000
+            </p>
+
+            <div class="progress-bar">
+                <div id="monthlyProgress" class="progress-fill"></div>
+            </div>
+
+            <p id = "monthlystat" class="status">
+                0% COMPLETE
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h2>ADD SALE</h2>
+
+            <input 
+                id="commissionInput"
+		type="number" 
+		placeholder="ENTER AMOUNT"
+            >
+
+            <button id="addButton">
+                ADD
+            </button>
+
+        </div>
+	<div class="card">
+
+		<h2>SET GOALS</h2>
+
+	<input
+		id="dailyGoalInput"
+		type="number"
+		placeholder="DAILY GOAL">
+
+	<input
+		id="monthlyGoalInput"
+		type="number"
+		placeholder="MONTHLY GOAL">
+
+	<button id="setGoalButton">
+		SET GOALS
+	</button>
+
+</div>
+
+
+
+    </div>
+
+
+    <!-- JavaScript connection -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
